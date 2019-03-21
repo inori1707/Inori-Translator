@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Inori Translator",
+  "description": "A simple online translator extension using Baidu Translate API",
+  "version": "0.1.0",
+  "icons": {
+    "16": "assets/images/icon_16.png",
+    "48": "assets/images/icon_48.png",
+    "128": "assets/images/icon_128.png"
+  },
+  "background": {
+    "scripts": ["assets/lib/md5.js", "script/background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "css": ["assets/css/popover.css"],
+    "js": ["script/contentscript.js"]
+  }],
+  "permissions": ["contextMenus"],
+  "browser_action": {
+    "default_icon": "assets/images/icon_128.png",
+    "default_title": "Inori Translotor!"
+  },
+  "web_accessible_resources": [
+    "assets/images/icon_48.png"
+  ]
+}

@@ -1,0 +1,77 @@
+.inori-mini-button {
+    box-sizing: border-box;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px 0 #999;
+    position: absolute;
+    z-index: 233333;
+    background-image: url(chrome-extension://bgnhejmhjnedcgcdiljhgkicelcbiijc/assets/images/icon_48.png);
+    background-size: cover;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.inori-popover {
+    box-sizing: border-box;
+    width: 250px;
+    min-height: 150px;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px 0 #999;
+    position: absolute;
+    z-index: 233334;
+    background-color: #fff;
+}
+
+.inori-popover .original-word {
+    margin: 0;
+    text-align: left;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.inori-popover>hr {
+    margin: 10px 0;
+    border-color: #dbdbdb;
+}
+
+.inori-popover .translate-result {
+    max-height: 75px;
+    margin: 0;
+    overflow-y: auto;
+    text-align: left;
+    color: #777;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+
+.inori-popover .translate-result.translate-error {
+    color: red;
+}
+
+.inori-popover .translate-result::-webkit-scrollbar-track-piece {
+    width: 2px;
+    background-color: #ddd;
+}
+
+.inori-popover .translate-result::-webkit-scrollbar {
+    width: 2px;
+    border-radius: 1px;
+}
+
+.inori-popover .translate-result::-webkit-scrollbar-thumb {
+    width: 2px;
+    background: #ccc;
+    cursor: pointer;
+}
