@@ -121,6 +121,7 @@ function isClickingPopover(event) {
 function doQuery() {
     removeIconPopover()
     displayResPopover()
+    resPopover.getElementsByClassName('original-word').item(0).title = selection.text
     resPopover.getElementsByClassName('original-word').item(0).innerText = selection.text
     resPopover.getElementsByClassName('translate-result').item(0).innerText = '查询中...'
 
